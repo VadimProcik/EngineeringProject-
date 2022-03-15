@@ -28,13 +28,21 @@ abstract class User
         $this->email = $email;
     }
 
-    public function cusAuthentication()
+    public function custAuthentication()
     {
-        echo "User ($this->email) is trying to log in with password ($this->password). \n";
+        echo "User $this->email is trying to log in as Customer with password $this->password. \n";
     }
     public function adminAuthentication()
     {
-        echo "User ($this->email) is trying to log in with password ($this->password). \n";
+        echo "User $this->email is trying to log in as Admin with password $this->password. \n";
+    }
+    public function login()
+    {
+        echo "$this->email has successfully logged in.\n";
+    }
+    public function logOut()
+    {
+        echo "$this->email has successfully logged out.\n";
     }
 }
 
