@@ -1,5 +1,5 @@
 <?php
-class Customer
+class Customer extends User
 {
     private String $name;
     private String $surname;
@@ -8,7 +8,6 @@ class Customer
     {
         return $this->name;
     }
-
     public function setName(string $name): void
     {
         $this->name = $name;
@@ -18,9 +17,19 @@ class Customer
     {
         return $this->surname;
     }
-
     public function setSurname(string $surname): void
     {
         $this->surname = $surname;
+    }
+
+    public function __construct(/*$id,*/ $password, $email,$name,$surname)
+    {
+        parent::__construct(/*$id,*/ $password, $email);
+       $this->name = $name;
+       $this->surname = $surname;
+    }
+    public function fullName()
+    {
+        echo "Users name is $this->name $this->surname";
     }
 }
