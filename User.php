@@ -1,7 +1,6 @@
 <?php
 abstract class User
 {
-//    public int $id;
     private string $password;
     private string $email;
 
@@ -23,9 +22,8 @@ abstract class User
         $this->email = $email;
     }
 
-    public function __construct(/*$id*/ $password, $email)
+    public function __construct( $password, $email)
     {
-    //    $this->id = $id;
         $this->password = $password;
         $this->email = $email;
     }

@@ -22,14 +22,14 @@ class Customer extends User
         $this->surname = $surname;
     }
 
-    public function __construct(/*$id,*/ $password, $email,$name,$surname)
+    public function __construct( $password, $email,$name,$surname)
     {
-        parent::__construct(/*$id,*/ $password, $email);
+        parent::__construct( $password, $email);
        $this->name = $name;
        $this->surname = $surname;
     }
     public function fullName()
     {
-        echo "Users name is $this->name $this->surname";
+        echo "Users name is $this->name $this->surname.\n";
     }
 }

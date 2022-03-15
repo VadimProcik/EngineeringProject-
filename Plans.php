@@ -2,75 +2,47 @@
 
 class Plans
 {
-    Private String $name;
+    Private String $planName;
     Private String $type;
     Private String $description;
-    Public Double $Price;
+    Private float  $price;
 
-    /**
-     * @return String
-     */
-    public function getName(): string
+    public function getPlanName(): string
     {
-        return $this->name;
+        return $this->planName;
+    }
+    public function setPlanName(string $planName): void
+    {
+        $this->planName = $planName;
     }
 
-    /**
-     * @param String $name
-     */
-    public function setName(string $name): void
-    {
-        $this->name = $name;
-    }
-
-    /**
-     * @return String
-     */
     public function getType(): string
     {
         return $this->type;
     }
-
-    /**
-     * @param String $type
-     */
     public function setType(string $type): void
     {
         $this->type = $type;
     }
 
-    /**
-     * @return String
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
-
-    /**
-     * @param String $description
-     */
     public function setDescription(string $description): void
     {
         $this->description = $description;
     }
 
-    /**
-     * @return float
-     */
     public function getPrice(): float
     {
-        return $this->Price;
+        return $this->price;
     }
-
-    /**
-     * @param float $Price
-     */
-    public function setPrice(float $Price): void
+    public function setPrice(float $price): void
     {
-        $this->Price = $Price;
+        $this->price = $price;
     }
-
-    
-
+    public function addPlan(){}
+    public function deletePlan(){}
+    public function modifyPlan(){}
 }
