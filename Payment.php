@@ -1,8 +1,13 @@
 <?php
 
-class Payment extends Order
+class Payment
 {
     private float $amount;
+
+    public function __construct($amount)
+    {
+        $this->amount = $amount;
+    }
 
     public function getAmount(): float
     {

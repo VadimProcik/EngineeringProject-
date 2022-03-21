@@ -6,6 +6,13 @@ class Card extends Payment
     private String $type;
     private int $cvv;
 
+    public function __construct($cvv, $type, $number,$amount)
+    {
+        parent::__construct($amount);
+        $this->cvv = $cvv;
+        $this->type = $type;
+        $this->number = $number;
+    }
     public function getNumber(): int
     {
         return $this->number;

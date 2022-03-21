@@ -1,10 +1,17 @@
 <?php
 
-class Order extends Basket
+class Order
 {
     private int $orderId;
     private DateTime $date;
-    private String $shipEmail; //aggregation
+    private String $shipEmail;
+
+    public function __construct($date,$shipEmail,$orderId)
+    {
+        $this->shipEmail = $shipEmail;
+        $this->date = $date;
+        $this->orderId = $orderId;
+    }
 
     public function getDate(): DateTime
     {
@@ -33,4 +40,5 @@ class Order extends Basket
         $this->shipEmail = $shipEmail;
     }
 
+    public function calcTotal(){}
 }
