@@ -4,10 +4,11 @@
     <list default="true" id="fa5e822d-f81a-4bf1-81c7-420706b41d80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Card.php" beforeDir="false" afterPath="$PROJECT_DIR$/Card.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/Payment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PersonalTrainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalTrainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plans.php" beforeDir="false" afterPath="$PROJECT_DIR$/Plans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Promo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Promo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/Transaction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1647331912112</updated>
       <workItem from="1647331914882" duration="11431000" />
-      <workItem from="1647852888944" duration="8659000" />
+      <workItem from="1647852888944" duration="13080000" />
     </task>
     <servers />
   </component>

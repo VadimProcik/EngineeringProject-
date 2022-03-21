@@ -15,18 +15,32 @@ $user1->custAuthentication();
 $user1->login();
 $user1->fullName();
 $user1->logOut();
-
 printf("\n");
-
 $user2 = new Customer("Hamburger","vadim15@gmail.com", "Vadim", "Procik");
 $user2->custAuthentication();
 $user2->login();
 $user2->fullName();
 $user2->logOut();
-
 printf("\n");
-
-$admin1 = new PersonalTrainer("PT123", "PT123@gmail.com", "Vadim");
+$admin1 = new PersonalTrainer("PT123", "pt123@gmail.com", "Disi");
 $admin1->adminAuthentication();
 $admin1->login();
+$admin1->name();
 $admin1->logOut();
+printf("\n");
+$plan1 = new Plans("Power Up","Power Lifting", "This plan offers you a great power insurgence withing just weeks of starting it", 49.99 );
+$plan1->planDetail();
+$plan1->planDesc();
+$plan1->planCost();
+$plan2 = new Plans("Transform", "BodyBuilding", "This plan is for the people who want to transform their body into one that they have dreamed of", 49.99);
+$plan2->planDetail();
+$plan2->planDesc();
+$plan2->planCost();
+$plan3 = new Plans("The Weight Blaster", "Slimming", "If you wanna loose all of you excess fat and look more healthier and comfortable in your own body then this plan is for YOU", 39.99);
+$plan3->planDetail();
+$plan3->planDesc();
+$plan3->planCost();
+$plan4 = new Plans("Titan Mode", "Bulking", "Wanna gain some extra mass? Wanna improve your strength?If so then this plan is perfect to get your goal started", 44.99);
+$plan4->planDetail();
+$plan4->planDesc();
+$plan4->planCost();

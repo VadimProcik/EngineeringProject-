@@ -1,12 +1,19 @@
 <?php
 
-class Plans extends Basket
+class Plans
 {
     Private String $planName;
     Private String $type;
     Private String $description;
     Private float  $price;
 
+    public function __construct($planName,$type,$description,$price)
+    {
+        $this->planName = $planName;
+        $this->type = $type;
+        $this->description = $description;
+        $this->price = $price;
+    }
     public function getPlanName(): string
     {
         return $this->planName;
@@ -15,7 +22,6 @@ class Plans extends Basket
     {
         $this->planName = $planName;
     }
-
     public function getType(): string
     {
         return $this->type;
@@ -24,7 +30,6 @@ class Plans extends Basket
     {
         $this->type = $type;
     }
-
     public function getDescription(): string
     {
         return $this->description;
@@ -33,7 +38,6 @@ class Plans extends Basket
     {
         $this->description = $description;
     }
-
     public function getPrice(): float
     {
         return $this->price;
@@ -42,7 +46,22 @@ class Plans extends Basket
     {
         $this->price = $price;
     }
+
+    public function planDetail ()
+    {
+        echo "$this->planName is a $this->type plan. ";
+    }
+    public function planDesc()
+    {
+        echo "$this->description.\n";
+    }
+    public function planCost()
+    {
+        echo "The cost of $this->planName plan is £$this->price.\n";
+    }
+    /*
     public function addPlan(){echo "Plan added\n";}
     public function deletePlan(){echo "Plan deleted\n";}
-    public function modifyPlan(){echo "Plan has been modified\n";}
+    public function changePlan(){echo "Plan has been changed\n";}
+    */
 }

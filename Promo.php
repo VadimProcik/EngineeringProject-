@@ -1,6 +1,6 @@
 <?php
 
-class Promo extends Basket
+class Promo
 {
     private String $promoCode;
     private float $amount;
@@ -22,5 +22,4 @@ class Promo extends Basket
     {
         $this->amount = $amount;
     }
-
 }

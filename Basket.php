@@ -7,7 +7,7 @@ class Basket
     private int $quantity;
     private String $planName;
 
-    public function __construct(int $quantity , String $planName, bool $empty, bool $promoAdd)
+    public function __construct($quantity ,$planName,$empty,$promoAdd)
     {
         $this->quantity = $quantity;
         $this->planName = $planName;

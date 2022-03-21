@@ -18,4 +18,8 @@ class PersonalTrainer extends User
         parent::__construct($password, $email);
         $this->trainerName = $trainerName;
     }
+    public function name()
+    {
+        echo "Personal Trainers name is $this->trainerName.\n";
+    }
 }

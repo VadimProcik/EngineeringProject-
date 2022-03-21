@@ -8,7 +8,6 @@ class Payment
     {
         $this->amount = $amount;
     }
-
     public function getAmount(): float
     {
         return $this->amount;
