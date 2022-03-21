@@ -1,10 +1,10 @@
 <?php
 
-class Order
+class Order extends Basket
 {
     private int $orderId;
     private DateTime $date;
-    private String $shipEmail;
+    private String $shipEmail; //aggregation
 
     public function getDate(): DateTime
     {

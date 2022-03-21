@@ -1,9 +1,9 @@
 <?php
 
-class Promo
+class Promo extends Basket
 {
     private String $promoCode;
-    private double $amount;
+    private float $amount;
 
     public function getPromoCode(): string
     {
@@ -22,6 +22,5 @@ class Promo
     {
         $this->amount = $amount;
     }
-
 
 }

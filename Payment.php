@@ -1,6 +1,6 @@
 <?php
 
-class Payment
+class Payment extends Order
 {
     private float $amount;
 

@@ -2,9 +2,8 @@
 
 class PersonalTrainer extends User
 {
-    public function __construct(/*$id,*/ $password, $email)
+    public function __construct($password, $email)
     {
-        parent::__construct(/*$id,*/ $password, $email);
+        parent::__construct($password, $email);
     }
-
 }

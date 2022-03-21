@@ -1,6 +1,6 @@
 <?php
 
-class Card
+class Card extends Payment
 {
     private int $number;
     private String $type;
@@ -31,6 +31,8 @@ class Card
     {
         $this->type = $type;
     }
-
-
+    public function Authorize()
+    {
+        echo "The card $this->type of number $this->number has been Authorized \n";
+    }
 }

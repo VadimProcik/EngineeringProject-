@@ -1,6 +1,6 @@
 <?php
 
-class Transaction
+class Transaction extends Payment
 {
 
 }

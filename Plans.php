@@ -1,6 +1,6 @@
 <?php
 
-class Plans
+class Plans extends Basket
 {
     Private String $planName;
     Private String $type;
@@ -42,7 +42,7 @@ class Plans
     {
         $this->price = $price;
     }
-    public function addPlan(){}
-    public function deletePlan(){}
-    public function modifyPlan(){}
+    public function addPlan(){echo "Plan added\n";}
+    public function deletePlan(){echo "Plan deleted\n";}
+    public function modifyPlan(){echo "Plan has been modified\n";}
 }

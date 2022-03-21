@@ -1,10 +1,11 @@
 <?php
 
-class Basket
+class Basket extends Customer
 {
     private bool $promoAdd;
     private bool $empty;
     private int $quantity;
+    private String $planChosen; //aggregation
 
     public function isEmpty(): bool
     {
@@ -33,5 +34,13 @@ class Basket
         $this->quantity = $quantity;
     }
 
+    public function getPlanChosen(): string
+    {
+        return $this->planChosen;
+    }
+    public function setPlanChosen(string $planChosen): void
+    {
+        $this->planChosen = $planChosen;
+    }
 
 }
