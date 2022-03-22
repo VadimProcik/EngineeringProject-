@@ -4,9 +4,9 @@
     <list default="true" id="fa5e822d-f81a-4bf1-81c7-420706b41d80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Card.php" beforeDir="false" afterPath="$PROJECT_DIR$/Card.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/Payment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalTrainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalTrainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plans.php" beforeDir="false" afterPath="$PROJECT_DIR$/Plans.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Promo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Promo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/Transaction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
@@ -21,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="26Pj2w0W30WXxcqPNcyQQVWQZp1" />
   <component name="ProjectViewState">
@@ -76,7 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1647331912112</updated>
       <workItem from="1647331914882" duration="11431000" />
-      <workItem from="1647852888944" duration="13080000" />
+      <workItem from="1647852888944" duration="13221000" />
+      <workItem from="1647955608883" duration="4855000" />
     </task>
     <servers />
   </component>

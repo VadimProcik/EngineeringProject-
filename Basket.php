@@ -3,25 +3,14 @@
 class Basket
 {
     private bool $promoAdd;
-    private bool $empty;
     private int $quantity;
     private String $planName;
 
-    public function __construct($quantity ,$planName,$empty,$promoAdd)
+    public function __construct($quantity ,$planName,$promoAdd)
     {
         $this->quantity = $quantity;
         $this->planName = $planName;
-        $this->empty = $empty;
         $this->promoAdd= $promoAdd;
-    }
-
-    public function isEmpty(): bool
-    {
-        return $this->empty;
-    }
-    public function setEmpty(bool $empty): void
-    {
-        $this->empty = $empty;
     }
 
     public function isPromoAdd(): bool
@@ -50,9 +39,8 @@ class Basket
     {
         $this->planName = $planName;
     }
-
-    public function CheckOut(){}
-    public function AddItem(){}
-    public function RemoveItem(){}
-    public function AddPromo(){}
+    public function CheckOut(){echo "There is $this->quantity items in your basket. If you are happy to proceed please checkout.\n";}
+    public function AddItem(){echo "Item $this->planName has been added to the basket.\n";}
+    public function RemoveItem(){echo "Item $this->planName has been removed from the basket.\n";}
+    public function AddPromo(){echo "Promo code has been added: $this->promoAdd\n";}
 }

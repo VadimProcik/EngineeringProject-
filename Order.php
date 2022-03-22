@@ -3,7 +3,7 @@
 class Order
 {
     private int $orderId;
-    private DateTime $date;
+    private String $date;
     private String $shipEmail;
 
     public function __construct($date,$shipEmail,$orderId)
@@ -13,11 +13,11 @@ class Order
         $this->orderId = $orderId;
     }
 
-    public function getDate(): DateTime
+    public function getDate(): String
     {
         return $this->date;
     }
-    public function setDate(DateTime $date): void
+    public function setDate(String $date): void
     {
         $this->date = $date;
     }
@@ -39,6 +39,12 @@ class Order
     {
         $this->shipEmail = $shipEmail;
     }
-
-    public function calcTotal(){}
+    public function Order()
+    {
+        echo "Order ($this->orderId) has been placed.\nThe date of purchase was $this->date.\nOrder ($this->orderId) will be sent to $this->shipEmail.\n";
+    }
+    public function calcTotal()
+    {
+        echo "Calculations of the total price will happen here.\n";
+    }
 }

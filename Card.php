@@ -40,6 +40,6 @@ class Card extends Payment
     }
     public function Authorize()
     {
-        echo "The card $this->type of number $this->number has been Authorized \n";
+        echo "The $this->type card of number $this->number has been Authorized \n";
     }
 }

@@ -17,4 +17,8 @@ class Payment
         $this->amount = $amount;
     }
 
+    public function toBePayed()
+    {
+        echo "The amount to be paid is £$this->amount.";
+    }
 }

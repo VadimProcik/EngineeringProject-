@@ -3,8 +3,13 @@
 class Promo
 {
     private String $promoCode;
-    private float $amount;
+    private float $discount;
 
+    public function __construct($promoCode,$discount)
+    {
+        $this->promoCode = $promoCode;
+        $this->discount = $discount;
+    }
     public function getPromoCode(): string
     {
         return $this->promoCode;
@@ -14,12 +19,16 @@ class Promo
         $this->promoCode = $promoCode;
     }
 
-    public function getAmount(): float
+    public function getDiscount(): float
     {
-        return $this->amount;
+        return $this->discount;
     }
-    public function setAmount(float $amount): void
+    public function setDiscount(float $discount): void
     {
-        $this->amount = $amount;
+        $this->discount= $discount;
+    }
+    public function Promotion()
+    {
+        echo "The promo code is $this->promoCode and it has a discount of $this->discount%.\n";
     }
 }
